@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class LeetCode {
 
@@ -50,15 +48,23 @@ public class LeetCode {
         HashSet<Integer> result = new HashSet<Integer>();
         for (int number : nums)
             result.add(number);
-
+        System.out.println(result.toString());
         return result.size();
     }
 
     public static int removeDuplicatesV2(int[] nums)
     {
-        int k = 0;
-        
+        List<Integer> result = new ArrayList<>();
+        Map<Integer, Long> countMap = new HashMap<>();
 
-        return k;
+        Arrays.stream(nums).forEach(n -> {
+            countMap.put(n, countMap.getOrDefault(n, 0L) +1);
+
+            if(countMap.get(n) <= 2)
+                result.add(n);
+        });
+        System.out.println(result.toString());
+
+        return result.size();
     }
 }
