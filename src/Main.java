@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        //Has matching parenthesis test
+        //Has matching parenthesis
         /*String test1 = new String("(Solution)");
         String test2 = new String("((Solution)");
         String test3 = new String("(Solution))");
@@ -63,7 +63,7 @@ public class Main {
         /*int[] numbers = {1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4};
         System.out.println("Elements count:" + LeetCode.removeDuplicatesV2(numbers));*/
 
-        //
+        //169. Majority Element
 
 
 
