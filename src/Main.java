@@ -64,7 +64,15 @@ public class Main {
         System.out.println("Elements count:" + LeetCode.removeDuplicatesV2(numbers));*/
 
         //169. Majority Element
+        /*int[] numbers = {2, 2, 1, 1, 1, 2, 2};
+        int result = LeetCode.majorityElement(numbers);
+        System.out.println(result != -1 ? result : "Not Found");*/
 
+        //189. Rotate Array
+        /*int[] numbers = {1,2,3,4,5,6,7};
+        LeetCode.rotate(numbers, 3);*/
+
+        //121. Best Time to Buy and Sell Stock
 
 
     }
